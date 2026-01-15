@@ -3,242 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Premium Video Streaming & Download</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        :root {
-            --primary-color: #e50914;
-            --secondary-color: #222;
-            --bg-color: #0f0f0f;
-            --text-color: #ffffff;
-            --btn-hover: #b20710;
-        }
+    <title>আরোহী মিম এর ৩ মিনিট ৩৯ সেকেন্ড ভাইরাল ভিডিও দেখুন</title>
+    
+    <!-- Social Media Preview Tags -->
+    <meta property="og:title" content="আরোহী মিম এর ৩ মিনিট ৩৯ সেকেন্ড ভাইরাল ভিডিও">
+    <meta property="og:description" content="ভাইরাল ভিডিওটি সরাসরি দেখতে এখানে ক্লিক করুন। হাই কোয়ালিটি ডাউনলোড লিঙ্ক সহ।">
+    <meta property="og:image" content="https://imgur.com/762xyT7.png"> <!-- Banner Link -->
+    <meta property="og:url" content="https://yourwebsite.com">
+    <meta name="twitter:card" content="summary_large_image">
 
+    <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-color);
+            background-color: #0f172a;
+            color: white;
             margin: 0;
             padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .container {
-            width: 100%;
-            max-width: 900px;
-            padding: 20px;
             text-align: center;
         }
-
-        /* Header / Banner Section */
-        header {
-            width: 100%;
-            height: 400px;
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.9)), url('https://imgur.com/Qz4qsOK.jpg') no-repeat center center/cover;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            border-bottom: 4px solid var(--primary-color);
-            border-radius: 0 0 20px 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
         }
-
-        header h1 {
-            font-size: 3rem;
-            margin: 0;
-            text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+        .header-title {
+            font-size: 24px;
+            color: #38bdf8;
+            margin-bottom: 20px;
+            padding: 10px;
+            font-weight: bold;
         }
-
-        /* Ad Section */
-        .ad-container {
-            margin: 20px 0;
-            min-height: 100px;
-            background: rgba(255, 255, 255, 0.05);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 10px;
-            overflow: hidden;
-            width: 100%;
-        }
-
-        /* Video Player Section */
         .video-box {
-            position: relative;
-            width: 100%;
-            background: #000;
-            border-radius: 15px;
-            margin-top: 20px;
-            overflow: hidden;
-            box-shadow: 0 0 20px rgba(229, 9, 20, 0.3);
-            cursor: pointer;
-        }
-
-        .video-box img {
-            width: 100%;
-            display: block;
-            opacity: 0.7;
-            transition: 0.3s;
-        }
-
-        .video-box:hover img {
-            opacity: 0.5;
-        }
-
-        .play-btn {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 80px;
-            color: var(--primary-color);
-            transition: 0.3s;
-        }
-
-        .video-box:hover .play-btn {
-            transform: translate(-50%, -50%) scale(1.2);
-        }
-
-        /* Download Options */
-        .download-section {
-            margin-top: 40px;
-        }
-
-        .download-section h2 {
-            border-left: 5px solid var(--primary-color);
-            padding-left: 15px;
-            text-align: left;
+            background: #1e293b;
+            padding: 10px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
             margin-bottom: 20px;
         }
-
-        .btn-group {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 15px;
+        video {
+            width: 100%;
+            border-radius: 8px;
+            display: block;
         }
-
-        .dl-btn {
-            background-color: var(--secondary-color);
-            color: white;
-            padding: 15px 25px;
+        .ad-slot {
+            margin: 20px 0;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.05);
+            min-height: 60px;
+        }
+        .download-section {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 30px;
+        }
+        .btn {
             text-decoration: none;
+            color: white;
+            padding: 15px;
             border-radius: 8px;
             font-weight: bold;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
             transition: 0.3s;
-            border: 1px solid #444;
+            display: block;
+            font-size: 18px;
         }
-
-        .dl-btn i {
-            font-size: 1.2rem;
+        .btn-1080p { background: #ef4444; }
+        .btn-720p { background: #f59e0b; }
+        .btn-460p { background: #10b981; }
+        .btn:hover {
+            opacity: 0.8;
+            transform: scale(1.02);
         }
-
-        .dl-btn:hover {
-            background-color: var(--primary-color);
-            border-color: var(--primary-color);
-            transform: translateY(-3px);
-        }
-
-        .btn-1080 { border-left: 5px solid #ffd700; }
-        .btn-720 { border-left: 5px solid #c0c0c0; }
-        .btn-460 { border-left: 5px solid #cd7f32; }
-
-        footer {
+        .footer {
             margin-top: 50px;
-            padding: 30px;
-            background: #111;
-            width: 100%;
-            text-align: center;
-            font-size: 0.9rem;
-            color: #777;
-        }
-
-        /* Responsive */
-        @media (max-width: 600px) {
-            header { height: 250px; }
-            header h1 { font-size: 1.8rem; }
+            font-size: 12px;
+            color: #64748b;
         }
     </style>
-
-    <!-- First Ad Script From User -->
-    <script src="https://disappearinghew.com/1a/80/6e/1a806ec139a767620109b6758399c1c9.js"></script>
 </head>
 <body>
 
-    <header>
-        <h1>WATCH NOW IN HD</h1>
-        <p>Experience the best quality streaming</p>
-    </header>
-
-    <div class="container">
-        
-        <!-- Ad Spot 1 -->
-        <div class="ad-container">
-            <script>
-                atOptions = {
-                    'key' : '895468b7eaed07986b15d35cc92103e8',
-                    'format' : 'iframe',
-                    'height' : 60,
-                    'width' : 468,
-                    'params' : {}
-                };
-            </script>
-            <script src="https://disappearinghew.com/895468b7eaed07986b15d35cc92103e8/invoke.js"></script>
-        </div>
-
-        <!-- Video Preview Section -->
-        <div class="video-box" onclick="window.location.href='https://imgur.com/IkbSVyJ'">
-            <img src="https://imgur.com/Qz4qsOK.jpg" alt="Video Preview">
-            <div class="play-btn">
-                <i class="fas fa-play-circle"></i>
-            </div>
-        </div>
-
-        <!-- Ad Spot 2 -->
-        <div class="ad-container">
-            <script async="async" data-cfasync="false" src="https://disappearinghew.com/b37964aa213e4295112b2691564a5c98/invoke.js"></script>
-            <div id="container-b37964aa213e4295112b2691564a5c98"></div>
-        </div>
-
-        <!-- Download Buttons -->
-        <div class="download-section">
-            <h2><i class="fas fa-download"></i> Download Links</h2>
-            <div class="btn-group">
-                <a href="https://disappearinghew.com/w9s477qb5?key=086ed27087d2e347dceffd0437dddf0b" class="dl-btn btn-1080" target="_blank">
-                    <span><i class="fas fa-film"></i> Download 1080p (Ultra HD)</span>
-                    <i class="fas fa-arrow-right"></i>
-                </a>
-                
-                <a href="https://data527.click/c216ade659fc1eb4f0a6/3a68d7d6da/?placementName=default" class="dl-btn btn-720" target="_blank">
-                    <span><i class="fas fa-video"></i> Download 720p (High Quality)</span>
-                    <i class="fas fa-arrow-right"></i>
-                </a>
-
-                <a href="https://otieu.com/4/9156891" class="dl-btn btn-460" target="_blank">
-                    <span><i class="fas fa-mobile-alt"></i> Download 460p (Mobile)</span>
-                    <i class="fas fa-arrow-right"></i>
-                </a>
-            </div>
-        </div>
-
-        <!-- Ad Spot 3 (Responsive/Floating) -->
-        <div class="ad-container">
-            <ins style="width: 300px;height:250px" data-width="300" data-height="250" class="df029bba886" data-domain="//data527.click" data-affquery="/2bd8aafa2d94ccb7838a/f029bba886/?placementName=default">
-                <script src="//data527.click/js/responsive.js" async></script>
-            </ins>
-        </div>
-
+<div class="container">
+    <!-- Top Ad Section -->
+    <div class="ad-slot">
+        <script src="https://disappearinghew.com/1a/80/6e/1a806ec139a767620109b6758399c1c9.js"></script>
     </div>
 
-    <footer>
-        <p>&copy; 2024 Premium Streaming Service. All rights reserved.</p>
-        <p style="font-size: 0.7rem;">Disclaimer: We do not host any files. All links are from third-party sites.</p>
-    </footer>
+    <h1 class="header-title">আরোহী মিম এর ৩ মিনিট ৩৯ সেকেন্ড ভাইরাল ভিডিও দেখুন</h1>
+
+    <!-- Video Section -->
+    <div class="video-box">
+        <video controls poster="https://imgur.com/762xyT7.png">
+            <source src="https://imgur.com/IkbSVyJ.mp4" type="video/mp4">
+            আপনার ব্রাউজারটি ভিডিও সাপোর্ট করছে না।
+        </video>
+    </div>
+
+    <!-- Mid Ad Section -->
+    <div class="ad-slot">
+        <script>
+          atOptions = {
+            'key' : '895468b7eaed07986b15d35cc92103e8',
+            'format' : 'iframe',
+            'height' : 60,
+            'width' : 468,
+            'params' : {}
+          };
+        </script>
+        <script src="https://disappearinghew.com/895468b7eaed07986b15d35cc92103e8/invoke.js"></script>
+    </div>
+
+    <!-- Download Buttons -->
+    <div class="download-section">
+        <a href="https://disappearinghew.com/w9s477qb5?key=086ed27087d2e347dceffd0437dddf0b" class="btn btn-1080p">Download 1080p (Full HD)</a>
+        <a href="https://data527.click/c216ade659fc1eb4f0a6/3a68d7d6da/?placementName=default" class="btn btn-720p">Download 720p (HD)</a>
+        <a href="https://otieu.com/4/9156891" class="btn btn-460p">Download 460p (Normal)</a>
+    </div>
+
+    <!-- Bottom Ad Section -->
+    <div class="ad-slot">
+        <script async="async" data-cfasync="false" src="https://disappearinghew.com/b37964aa213e4295112b2691564a5c98/invoke.js"></script>
+        <div id="container-b37964aa213e4295112b2691564a5c98"></div>
+    </div>
+
+    <!-- Native Ad Style -->
+    <div class="ad-slot">
+        <ins style="width: 300px;height:250px" data-width="300" data-height="250" class="df029bba886" data-domain="//data527.click" data-affquery="/2bd8aafa2d94ccb7838a/f029bba886/?placementName=default">
+            <script src="//data527.click/js/responsive.js" async></script>
+        </ins>
+    </div>
+
+    <p class="footer">© 2024 Viral Content World - All Rights Reserved</p>
+</div>
 
 </body>
 </html>
